@@ -31,29 +31,4 @@ O projeto é organizado em três classes principais:
    git clone https://github.com/seuusuario/CalculadoraCDI.git
    cd CalculadoraCDI
    
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartPanel;
-import org.jfree.chart.JFreeChart;
-import org.jfree.data.category.CategoryDataset;
-import org.jfree.data.category.DefaultCategoryDataset;
-
-public class GraficoRendimento {
-    public static void main(String[] args) {
-        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        dataset.addValue(1000, "Rendimento Bruto", "Mês 1");
-        dataset.addValue(1200, "Rendimento Bruto", "Mês 2");
-        dataset.addValue(1400, "Rendimento Bruto", "Mês 3");
-        dataset.addValue(1600, "Rendimento Bruto", "Mês 4");
-
-        JFreeChart chart = ChartFactory.createBarChart(
-                "Rendimento Bruto ao Longo do Tempo",
-                "Meses",
-                "Rendimento (R$)",
-                dataset
-        );
-
-        ChartPanel chartPanel = new ChartPanel(chart);
-        
-    }
-}
    
